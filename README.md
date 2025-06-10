@@ -15,29 +15,48 @@ The next M lines each contain M characters describing the room layout:
 - 'O' = storage location
 - 'B' = Bob’s starting position (exactly one)
 - '-' = empty tile
+
 Constraints:
 - Box positions never overlap with walls or Bob’s initial position.
 - Exactly N storage locations exist.
 - Bob is fully enclosed by walls and cannot reach the grid's border.
+
 Sample input:
+
 3 10
+
 3 4
+
 5 7
+
 6 4
+
 ---XXXX---
+
 ---XO-X---
+
 ---X--X---
+
 -XXX--XXX-
+
 -X------X-
+
 -XB---O-X-
+
 -XXX--XXX-
+
 ---X--X---
+
 ---XO-X---
+
 ---XXXX---
 
 Output Format:
+
 First line: an integer K, the number of moves in the solution.
+
 Second line: K space-separated move commands.
+
 Each move is either:
 - A regular move: one of U, D, L, R (up, down, left, right), or
 - A box pull move: one of UP, DP, LP, RP (pulling a box from up, down, left, right).
