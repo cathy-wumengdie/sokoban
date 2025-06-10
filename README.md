@@ -3,6 +3,7 @@ Sokoban is a grid-based puzzle game where a player, Bob, must move boxes onto de
 Bob can move the boxes by 
 - pushing the box by moving into it, if the space behind the box is empty, or
 - pulling the adjacent box into the square he previously occupied, if the space behind Bob is empty.
+
 The objective is to help Bob find the shortest sequence of moves to place all boxes on storage locations.
 
 # Strategy:
@@ -10,6 +11,7 @@ This program uses Breadth-First Search (BFS) to explore all possible valid moves
 - Normal move: Bob moves into an adjacent empty or storage square.
 - Push: Bob moves into a square with a box, pushing it forward (if the next square is empty or a storage location).
 - Pull: Bob moves away from a box that is directly adjacent and drags it into his current position (if the move is valid).
+
 We explore all such moves until a state is reached where all boxes are on storage locations, and return the shortest sequence of moves that leads to this solution.
 
 # Input format:
