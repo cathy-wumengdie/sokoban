@@ -8,6 +8,7 @@ Bob can move the boxes by
 The objective is to help Bob find the shortest sequence of moves to place all boxes on storage locations.
 
 <img width="419" alt="Screenshot 2025-06-10 at 12 55 29 PM" src="https://github.com/user-attachments/assets/db15a781-0937-41c5-9d75-e950d22d4429" />
+
 A screenshot from a level in one of the earlier releases of the Sokoban puzzle (Soko-Ban, 1988).
 
 # Strategy:
