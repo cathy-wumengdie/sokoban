@@ -53,7 +53,9 @@ Sample input:
 
 # Output Format:
 First line: an integer K, the number of moves in the solution.
+
 Second line: K space-separated move commands.
+
 Each move is either:
 - A regular move: one of U, D, L, R (up, down, left, right), or
 - A box pull move: one of UP, DP, LP, RP (pulling a box from up, down, left, right).
