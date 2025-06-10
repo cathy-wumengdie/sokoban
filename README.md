@@ -5,6 +5,13 @@ Bob can move the boxes by
 - pulling the adjacent box into the square he previously occupied, if the space behind Bob is empty.
 The objective is to help Bob find the shortest sequence of moves to place all boxes on storage locations.
 
+# Strategy:
+This program uses Breadth-First Search (BFS) to explore all possible valid moves that Bob can make in the grid. Each state includes the positions of Bob and all boxes. At each step, we consider:
+- Normal move: Bob moves into an adjacent empty or storage square.
+- Push: Bob moves into a square with a box, pushing it forward (if the next square is empty or a storage location).
+- Pull: Bob moves away from a box that is directly adjacent and drags it into his current position (if the move is valid).
+We explore all such moves until a state is reached where all boxes are on storage locations, and return the shortest sequence of moves that leads to this solution.
+
 # Input format:
 The first line contains two integers, N and M, where
 - N is the number of boxes (0 ≤ N ≤ 3),
